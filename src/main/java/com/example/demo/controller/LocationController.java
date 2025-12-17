@@ -3,5 +3,7 @@ public class    LocationController{
     @Autowired
     LocationService locationController;
     @PostMapping("/addstudent")
-    public LocationService add(@RequestBody )
+    public LocationService add(@RequestBody LocationEntity le){
+        
+    }
 }
