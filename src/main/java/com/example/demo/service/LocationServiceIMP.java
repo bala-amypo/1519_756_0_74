@@ -1,3 +1,6 @@
 package com.example.demo.service;
 
-public class Location
+public class LocationServiceIMP implements LocationService {
+    @Autowired
+
+}
