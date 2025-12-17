@@ -25,6 +25,18 @@ public class LocationEntity {
     public Double getLatitude() {
         return latitude;
     }
+      public void setId(Long id) {
+        this.id = id;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
+    }
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
     public LocationEntity() {
     }
     public LocationEntity(Long id, String name, Double longitude, Double latitude) {
@@ -36,3 +48,4 @@ public class LocationEntity {
     
 
 }
+
