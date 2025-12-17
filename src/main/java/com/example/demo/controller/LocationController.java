@@ -16,7 +16,7 @@ public class LocationController {
     @Autowired
     LocationService locationService;
     @PostMapping("/addstudent")
-    public LocationService add(@RequestBody LocationEntity le){
+    public LocationEntity add(@RequestBody LocationEntity le){
         return locationService.createlocation(le);
     }
     @GetMapping("/showlocation")

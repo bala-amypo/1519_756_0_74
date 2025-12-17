@@ -12,7 +12,7 @@ import com.example.demo.repository.LocationRepository;
 public class LocationServiceIMP implements LocationService {
 
     @Autowired
-    private LocationRepository locationrepo;
+    LocationRepository locationrepo;
 
     @Override
     public LocationEntity createlocation(LocationEntity le) {
