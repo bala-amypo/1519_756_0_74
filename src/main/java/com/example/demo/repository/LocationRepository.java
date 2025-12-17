@@ -7,4 +7,4 @@ import com.example.demo.entity.LocationEntity;
 public interface LocationRepository extends JpaRepository<LocationEntity, Long> {
 
     
-}
+} 
