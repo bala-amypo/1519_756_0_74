@@ -1,17 +1,26 @@
 package com.example.demo.service;
 
+import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import com.example.demo.entity.LocationEntity;
+import com.example.demo.repository.LocationRepository;
 
+@Service
 public class LocationServiceIMP implements LocationService {
+
     @Autowired
-    LocationRepository Locationrepo;
-    @overide
-    public LocationEntity createlocation(LocationEntity le){
+    private LocationRepository locationrepo;
 
-        return Locationrepo.save(le); 
-    }  
-    public List getalllocation(LocationEntity le)
+    @Override
+    public LocationEntity createlocation(LocationEntity le) {
+        return locationrepo.save(le);
+    }
 
-
+    @Override
+    public List<LocationEntity> getalllocation() {
+        return locationrepo.findAll();
+    }
 }
